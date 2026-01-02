@@ -1,0 +1,62 @@
+// See https://go.microsoft.com/fwlink/?LinkId=733558
+// for the documentation about the tasks.json format
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "watch",
+      "dependsOn": ["bun: watch:check-types", "bun: watch"],
+      "presentation": {
+        "reveal": "never"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "bun: watch",
+      "type": "bun",
+      "script": "watch",
+      "group": "build",
+      "problemMatcher": {
+        "owner": "external",
+        "pattern": {
+          "regexp": "^.*$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": {
+            "regexp": "^.*$"
+          },
+          "endsPattern": {
+            "regexp": "^.*$"
+          }
+        }
+      },
+      "isBackground": true,
+      "presentation": {
+        "group": "watch",
+        "reveal": "never"
+      }
+    },
+    {
+      "label": "bun: watch:check-types",
+      "type": "bun",
+      "script": "watch:check-types",
+      "group": "build",
+      "problemMatcher": "$tsc-watch",
+      "isBackground": true,
+      "presentation": {
+        "group": "watch",
+        "reveal": "never"
+      }
+    },
+    {
+      "label": "compile",
+      "type": "bun",
+      "script": "compile",
+      "problemMatcher": ["$tsc"]
+    }
+  ]
+}

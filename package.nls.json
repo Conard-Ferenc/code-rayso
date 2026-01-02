@@ -1,0 +1,9 @@
+{
+  "configuration.theme": "Select Default Theme",
+  "configuration.background": "Enable Background",
+  "configuration.darkMode": "Enable Dark Mode",
+  "configuration.lineNumbers": "Enable Line Numbers",
+  "configuration.padding": "Padding Distance",
+  "configuration.languageMap": "LanguageId Mapping",
+  "command.openCodeSnapFormRayso": "Use Ray.so to Open Code Snapshot"
+}

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleDetection": "auto",
+    "target": "ESNext",
+    "outDir": "dist",
+    "lib": ["ESNext", "WebWorker"],
+    "sourceMap": true,
+    "strict": true /* enable all strict type-checking options */,
+    "skipLibCheck": true
+  },
+
+  "include": ["src"]
+}

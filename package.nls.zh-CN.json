@@ -1,0 +1,9 @@
+{
+  "configuration.theme": "选择默认主题",
+  "configuration.background": "是否启用背景",
+  "configuration.darkMode": "是否启用暗黑模式",
+  "configuration.lineNumbers": "是否启用行号",
+  "configuration.padding": "填充距离",
+  "configuration.languageMap": "语言标识映射",
+  "command.openCodeSnapFormRayso": "使用 Ray.so 打开代码快照"
+}
