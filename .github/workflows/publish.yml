@@ -18,16 +18,16 @@ jobs:
         with:
           bun-version: latest
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
       - name: Install Dependencies
         run: bun install
 
       - name: Build
         run: bun run compile
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
 
       - name: Publish to Open VSX Registry
         uses: HaaLeo/publish-vscode-extension@v2
